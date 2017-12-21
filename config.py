@@ -1,1 +1,1 @@
-access_token="<add>"
+access_token=""
