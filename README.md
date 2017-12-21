@@ -12,7 +12,7 @@ Install the following packages:
 * generate access token and copy the token an put it in config.py
 
 ## To run the Script
-Open a command line in the folder and run 'python coinbaseping.py' <br /v>
+Open a command line in the folder and run 'python coinbaseping.py' <br />
 To run it in a Ubuntu server on the cloud use nohup to get it running in the background using 'nohup python coinbaseping.py &'
 
 ## If this makes you come cash feel free to share the love ;)
