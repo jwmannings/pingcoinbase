@@ -12,5 +12,5 @@ Install the following packages:
 * generate access token and copy the token an put it in config.py
 
 ## If this makes you come cash feel free to share the love ;)
-golem address: 0xbB613B3B2698f7bb00f15F81F31610289a0afD25
+golem address: 0xbB613B3B2698f7bb00f15F81F31610289a0afD25 <br />
 litecoin address: LNSt9Mv8ny3j2LkM5NMtkGJDysTiXRQXLS
