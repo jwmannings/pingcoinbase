@@ -6,9 +6,6 @@ currency_list = ['EOS', 'TRX', 'VEN', 'BNB', 'ICX', 'OMG', 'DGD', 'BTM', 'PPT', 
 i = 0
 o = 0
 
-second_mode = False
-
-
 def send_notification(title, body):
     data_send = {"type": "note", "title": title, "body": body}
     resp = rq.post('https://api.pushbullet.com/v2/pushes', data=json.dumps(data_send),
@@ -17,17 +14,6 @@ def send_notification(title, body):
         raise Exception('Something wrong')
     else:
         print('complete sending')
-
-    if second_mode:
-        data_send = {"type": "note", "title": title, "body": body}
-        resp = rq.post('https://api.pushbullet.com/v2/pushes', data=json.dumps(data_send),
-                             headers={'Authorization': 'Bearer ' + access_token_2, 'Content-Type': 'application/json'})
-        if resp.status_code != 200:
-            raise Exception('Something wrong')
-        else:
-            print('complete sending')
-    else:
-        pass
 
 while True:
     for x in currency_list:
@@ -40,8 +26,8 @@ while True:
             pass
         if any("errors" in s for s in call):
             if call["errors"][0]["id"] == 'invalid_request':
-                pass
                 #print(call["errors"][0]["id"])
+                pass
             else:
                 pass
                 #print("No error")
